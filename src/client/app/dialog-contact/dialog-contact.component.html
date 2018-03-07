@@ -1,0 +1,52 @@
+<div class="box contact-us">
+  <div class="container">
+    <p class="title is-2">contact us</p>
+    <form [formGroup]= "myForm">
+        <div class="field">
+            <label class="label">Name</label>
+            <div class="control">
+              <input class="input" type="text" placeholder="Name" formControlName="name">
+            </div>
+          
+          </div>
+          <div class="field">
+              <label class="label">Company name</label>
+              <div class="control">
+                <input class="input" type="text" placeholder="Company name" formControlName="company">
+              </div>
+            
+            </div>
+            <div class="field">
+                <label class="label">Email</label>
+                <div class="control">
+                  <input class="input" type="text" placeholder="Email" formControlName="email">
+                </div>
+              
+              </div>
+              <div class="field">
+                  <label class="label">Tel</label>
+                  <div class="control">
+                    <input class="input" type="text" placeholder="contact Tel" formControlName="tel">
+                  </div>
+                
+                </div>
+                <div class="field">
+                    <label class="label">Product</label>
+                    <div class="control">
+                      <input class="input" type="text" placeholder="contact Tel" formControlName="product">
+                    </div>
+                  
+                  </div>
+                  <div class="field">
+                      <label class="label">Message</label>
+                      <div class="control">
+                          <textarea class="textarea" placeholder="Message" formControlName="message"></textarea>
+                      </div>
+                    
+                    </div>
+
+                    <button class="button is-primary" (click)="onSubmit()">Submit</button>
+    </form>
+  </div>
+
+</div>

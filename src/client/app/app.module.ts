@@ -3,16 +3,23 @@ import { NgModule } from '@angular/core';
 
 
 import { AppComponent } from './app.component';
+import { RoutingModule } from './app-routing/routing.module';
+import { ContactusComponent } from './contactus/contactus.component';
+import { RestangularModule, Restangular } from 'ngx-restangular';
+import { restangularConfigFactory } from './shared/rest-config';
+import { ApiService } from './services/api.service';
+
 
 
 @NgModule({
-  declarations: [
-    AppComponent
-  ],
+  declarations: [],
   imports: [
-    BrowserModule
+    BrowserModule,
+    RoutingModule,
+    RestangularModule.forRoot(restangularConfigFactory)
+
   ],
-  providers: [],
+  providers: [ApiService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
