@@ -1,52 +1,111 @@
-<div class="box contact-us">
+<div class="contact-us">
   <div class="container">
-    <p class="title is-2">contact us</p>
-    <form [formGroup]= "myForm">
-        <div class="field">
+    <p class="title is-2">Website under construction: contact us</p>
+    <img src="/assets/images/banner2.png" height="400px" alt="logo">
+    <div class="columns">
+      <div class="column is-half">
+        <form [formGroup]="myForm">
+          <div class="field">
             <label class="label">Name</label>
             <div class="control">
               <input class="input" type="text" placeholder="Name" formControlName="name">
             </div>
-          
+
           </div>
           <div class="field">
-              <label class="label">Company name</label>
-              <div class="control">
-                <input class="input" type="text" placeholder="Company name" formControlName="company">
-              </div>
-            
+            <label class="label">Company name</label>
+            <div class="control">
+              <input class="input" type="text" placeholder="Company name" formControlName="company">
             </div>
-            <div class="field">
-                <label class="label">Email</label>
-                <div class="control">
-                  <input class="input" type="text" placeholder="Email" formControlName="email">
-                </div>
-              
-              </div>
-              <div class="field">
-                  <label class="label">Tel</label>
-                  <div class="control">
-                    <input class="input" type="text" placeholder="contact Tel" formControlName="tel">
-                  </div>
-                
-                </div>
-                <div class="field">
-                    <label class="label">Product</label>
-                    <div class="control">
-                      <input class="input" type="text" placeholder="contact Tel" formControlName="product">
-                    </div>
-                  
-                  </div>
-                  <div class="field">
-                      <label class="label">Message</label>
-                      <div class="control">
-                          <textarea class="textarea" placeholder="Message" formControlName="message"></textarea>
-                      </div>
-                    
-                    </div>
 
-                    <button class="button is-primary" (click)="onSubmit()">Submit</button>
-    </form>
+          </div>
+          <div class="field">
+            <label class="label">Email</label>
+            <div class="control">
+              <input class="input" type="text" placeholder="Email" formControlName="email">
+            </div>
+
+          </div>
+          <div class="field">
+            <label class="label">Tel</label>
+            <div class="control">
+              <input class="input" type="text" placeholder="contact Tel" formControlName="tel">
+            </div>
+
+          </div>
+          <div class="field">
+            <label class="label">Product</label>
+            <div class="control">
+              <input class="input" type="text" placeholder="contact Tel" formControlName="product">
+            </div>
+
+          </div>
+          <div class="field">
+            <label class="label">Message</label>
+            <div class="control">
+              <textarea class="textarea" placeholder="Message" formControlName="message"></textarea>
+            </div>
+
+          </div>
+
+          <button class="button is-primary" (click)="onSubmit()">Submit</button>
+
+        </form>
+      </div>
+      <div class="column is-half" >
+        <div class="field">
+            <div class="card logo">
+                <div class="card-image">
+                  <figure class="image is-3by4">
+                    <img src="/assets/images/banner2.png" alt="logo">
+                  </figure>
+                </div>
+                <div class="card-content">
+                  <div class="media">
+                    <div class="media-left">
+                      <figure class="image is-48x48">
+                        <img src="/assets/images/call.png" alt="Placeholder image">
+                      </figure>
+                    </div>
+                    <div class="media-content">
+                      <p class="title is-4">Contact Us</p>
+                      <p class="subtitle is-6">254 70000000 <br/>info@slutionsmediaproductions</p>
+                
+                    </div>
+                  </div>
+              
+                  <div class="content">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Phasellus nec iaculis mauris. <a>@bulmaio</a>.
+                    <a href="#">#css</a> <a href="#">#responsive</a>
+                    <br>
+                    <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+                  </div>
+                </div>
+              </div>
+        </div>
+        <p class="title">stay in touch</p>
+        <div class="field">
+            <label class="label">Social media</label>
+            <div class="box">
+              <div class="row">
+                <div>
+              <img src="/assets/images/twitter.png" alt="">
+            </div>
+            <div>
+                <img src="/assets/images/insta.png" alt="">
+              </div>
+              <div>
+                  <img src="/assets/images/pin.png" alt="">
+                </div>
+                <div>
+                    <img src="/assets/images/facebook.png" alt="">
+                  </div>
+            </div>
+            </div>
+
+      </div>
+    </div>
   </div>
 
 </div>

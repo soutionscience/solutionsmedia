@@ -2,11 +2,33 @@
     width: 95%;
     margin: auto;
     margin-top: 8px;
+    color: white;
 }
 .contact-us form .field{
-    width: 50%;
+    //width: 50%;
 }
 form{
     width: 100%;
     margin: auto;
+}
+.field{
+    color: white;
+    padding: 8px;
+     background-color: rgba(162, 11, 16, 0.5);
+   // border: white solid 0.5px;
+   //background-color: rgba(33, 7, 55, 0.5);
+    border-radius: 1%;
+}
+.is-2,.label{
+    color: white;
+}
+.row{
+    display: inline-block;
+}
+.row div{
+    float: left;
+    margin-left: 16px;
+}
+.logo{
+    padding: 8px;
 }
