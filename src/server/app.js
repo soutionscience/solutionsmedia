@@ -5,6 +5,7 @@ var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var mongoose = require('mongoose')
+var auth = require('./routes/auth.route')
 require('dotenv').config();
 
 
@@ -27,7 +28,8 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', index);
-app.use('/users', users);
+app.use('/api/users', users);
+app.use('/api/users/auth', auth)
 app.use('/api/messages', message)
  
 mongoose.connect(process.env.localdb, function(err, db){
